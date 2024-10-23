@@ -19,6 +19,8 @@ sed -i "s/wpad-openssl/wpad-basic-mbedtls/" target/linux/qualcommax/Makefile
 
 sed -i "s/OpenWrt/Kwrt/g" package/base-files/files/bin/config_generate package/base-files/image-config.in config/Config-images.in Config.in include/u-boot.mk include/version.mk package/network/config/wifi-scripts/files/lib/wifi/mac80211.sh || true
 
+sed -i "s/192.168.1/192.168.0/" package/base-files/files/bin/config_generate
+
 
 
 
